@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+
+<nav class="bg-white shadow sticky top-0 z-50">
+<div class="max-w-7xl mx-auto flex justify-between items-center p-5">
+<a href="index.html" class="text-3xl font-bold text-indigo-600">
+ShopEase
+</a>
+<div class="flex gap-5">
+<a href="index.html">Home</a>
+<a href="cart.html" class="relative">
+
+<i class="fa-solid fa-cart-shopping text-2xl"></i>
+<span
+id="cartCount"
+class="absolute -top-2 -right-3 bg-red-500 text-white rounded-full text-xs px-2">
+0
+</span>
+</a>
+
+</div>
+</div>
+</nav>
+
+<div
+id="loader"
+class="flex justify-center items-center py-20">
+<div
+class="w-16 h-16 border-4 border-indigo-600 border-t-transparent rounded-full animate-spin">
+</div>
+</div>
+
+<div
+id="productContainer"
+class="max-w-7xl mx-auto p-8">
+</div>
+
+<script src="js/product.js"></script>
+</body>
+</html>
